@@ -1,0 +1,49 @@
+.btn,
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 7rem;
+    -webkit-transition: all 0.2s, border 0.2s, color 0.2s;
+    transition:  all 0.2s, border 0.2s, color 0.2s; 
+    box-shadow: 1rem 2rem 5rem rgba($color-blue, 10%);
+}
+
+.btn-full,
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    color : $color-white;
+}
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: $color-primary-dark;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    transform: translateY(-2px);
+}
+
+.btn-outline,
+.btn-outline:link,
+.btn-outline:visited {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+}
+
+
+.btn-outline:hover,
+.btn-outline:active {
+    color : $color-white;
+    border: 1px solid $color-primary;
+}

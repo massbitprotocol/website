@@ -1,0 +1,200 @@
+.header {
+    position: relative;
+    height: 95vh;
+    overflow: hidden;
+    background-color: $color-blue-light;
+
+    @include respond(tab-port) {
+        padding-top: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    @include respond(phone) {
+        height: 100vh;
+        padding-top: 12rem;
+    }
+
+    &__textbox {
+        max-width: 30vw;
+        width: fit-content;
+        position: absolute;
+        top: 33%;
+        left: 10%;
+        transform: translateZ(0);
+        z-index: 3;
+
+        @include respond(tab-land) {
+            left: 8%;
+        }
+
+        @include respond(tab-port) {
+            min-width: 80vw;
+            position: static;
+            top: auto;
+            left: auto;
+            bottom: 1rem;
+            margin: 0 auto;
+            transform: translate(0, 0);
+        }
+
+        &-content {
+            color: $color-gray-dark;
+
+            @include respond(tab-port) {
+                margin: 0 auto;
+            }
+        }
+
+        &-text {
+            color: $color-gray;
+            margin-top: 2.5rem;
+            font-size: 2rem;
+            line-height: 2;
+
+            @include respond(tab-land) {
+                width: 35vw;
+            }
+
+            @include respond(tab-port) {
+                width: 100%;
+                margin: 3rem auto 0;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__spotlight,
+    &__back,
+    &__fore,
+    &__around,
+    &__display {
+        width: 45vw;
+        height: 65vh;
+        position: absolute;
+        bottom: 6rem;
+        right: 4%;
+        z-index: 2;
+
+        @include respond(tab-land) {
+            width: 55vw;
+            right: 0;
+        }
+
+        @include respond(tab-port) {
+            // max-height: 50vh;
+            // max-width: 90vw;
+            height: auto;
+            width: 65vw;
+            max-height: 45vh;
+            bottom: auto;
+            margin: 0 auto;
+            position: static;
+        }   
+    }
+
+    &__around {
+        @include respond(tab-port) {
+            .header__spotlight,
+            .header__fore,
+            .header__back{
+                display: none;
+            }
+        }
+
+        #huobi {
+            width: 5.5rem;
+            left: -6rem;
+            bottom: 3rem;
+            opacity: 0.9;
+        }
+        
+        #harmony {
+            width: 4.5rem;
+            right: 5rem;
+            top: 0;
+        }
+        
+        #uniswap {
+            width: 5rem;            
+            right: 2rem;
+            bottom: 28rem;
+            opacity: 0.9;
+        }
+        
+        #trust {
+            right: 18rem;
+            top: 9rem;
+        }
+        
+        #math {
+            left: -4rem;
+            top: 20rem;
+            width: 7.5rem;
+        }
+
+        #bitfinex {
+            width: 2.5rem;
+            right: 40rem;
+            top: -6rem;
+
+            @include respond(tab-land) {
+                right: 20vw;
+                top: 0;
+            }    
+        }
+
+        #coinbase {
+            width: 2rem;
+            left: 5rem;
+            bottom: 20rem;
+        }
+
+        #gateio {
+            width: 3.5rem;
+            left: 8rem;
+            top: -1rem;
+        }
+
+        #gemini {
+            width: 6rem;
+            right: -4rem;
+            bottom: 8rem;
+            @include respond(tab-land) {
+                right: -6rem;
+            }   
+        }
+
+        #balancer {
+            width: 5rem;
+            left: 10rem;
+            bottom: -16rem;
+        }
+
+        #balancer,
+        #gemini,
+        #harmony,
+        #coinbase,
+        #gateio,
+        #bitfinex {
+            opacity: 0.2;
+        }
+
+        #spotlight {
+            fill:#f7faff;
+        }
+
+    }
+
+    &__spotlight {
+        opacity: 0.7;
+        height: 75vh;
+        bottom: 0;
+        right: 6rem;
+        
+        @include respond(tab-land) {
+            right: 1rem;
+        }   
+    }
+}
