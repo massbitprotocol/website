@@ -1,0 +1,43 @@
+.scrollerY {
+    height: 6.5rem;
+    min-width: 55rem;
+    overflow: hidden;
+    position: relative;
+
+    @include respond(tab-land){
+        height: 5.5rem;
+        min-width: 48rem;
+    }
+
+    @include respond(phone){
+        height: 4.5rem;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        content: '';
+        height: 1rem;
+        position: absolute;
+        background: linear-gradient(180deg, $color-blue-light, rgba(255,255,255,0));
+    }
+
+    &::after {
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        content: '';
+        height: 1rem;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(255,255,255,0), $color-blue-light);
+    }
+    
+    &-list {
+        list-style: none;
+        animation: scrollUp 6s infinite ease-in-out forwards;
+        -webkit-animation: scrollUp 6s infinite ease-in-out forwards;
+    }
+}

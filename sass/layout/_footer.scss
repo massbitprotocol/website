@@ -1,0 +1,79 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    padding: 4rem;
+    padding-top: 6rem;
+    background-color: $color-primary-dark;
+    color: $color-blue-light;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @include respond(phone) {
+        padding: 6rem 3rem; 
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between !important;
+    }
+
+    &__brand,
+    &__build,
+    &__about,
+    &__social {
+        width: 25%;
+        padding: 1rem 4rem;
+        @include respond(tab-land){
+            padding: 1rem 2rem;
+        }
+        @include respond(tab-port){
+            padding: 1rem 1rem;
+        }
+        @include respond(phone){
+            padding: 1rem 0rem;
+        }
+    }
+
+    &__brand {
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: $color-blue;
+            font-weight: 300;
+            
+            &:hover {
+                color: $color-highlight;
+            }
+        }
+    }
+
+    &__logo {
+        width: 70%;
+        opacity: 0.8;
+        margin: 1rem auto;
+        display: block;
+
+        @include respond(phone){
+            width: 15rem;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        max-width: 1.2rem;
+        margin-right: 2px;
+    }
+
+    &__text {
+        display: inline-block;
+    }
+
+}
