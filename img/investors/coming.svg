@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <style type="text/css">
-      
-	.arrow {fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-
-  </style>
-  <polyline class="arrow" points="95 85.7 107 92.6 119 99.5 107 106.4 95 113.3 "/>
-</svg>
