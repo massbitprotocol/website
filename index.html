@@ -20,18 +20,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="css/fonts/airbnb-cereal-app/style.css" />
-    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.theme.default.min.css" />
     <!-- <link rel="stylesheet" href="plugins/AOS/aos.css" /> -->
     <link rel="stylesheet" href="css/style.css?v=12" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZJ6DMKTCF"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GZJ6DMKTCF');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-GZJ6DMKTCF');
     </script>
 
     <title>MassBit.io</title>
@@ -55,26 +58,31 @@
                         <a class="nav-link" href="#WhyMassBit">Why MassBit</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="coming-soon.html" target="_blank">Developers</a>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Developers
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown0">
+                            <li><a class="dropdown-item" target="_blank" href="https://docs.massbit.io/about/introduction">Docs</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://docs.massbit.io/about/contact-us">Supports</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://github.com/massbitprotocol/">Github</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://discord.gg/jbaUzJYT">Discord</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Products
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#MassBitRoute">MassBit Route</a></li>
-                            <li><a class="dropdown-item" href="#CrossChainIndexing">Cross-chain Indexing</a></li>
-                            <li><a class="dropdown-item" href="#MassBitInsights">MassBit Insights</a></li>
+                            <li><a class="dropdown-item" href="massbit-route.html">MassBit Route</a></li>
+                            <li><a class="dropdown-item" href="coming-soon.html">Cross-chain Indexing</a></li>
+                            <li><a class="dropdown-item" href="coming-soon.html">MassBit Insights</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="coming-soon.html" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://docs.massbit.io/" target="_blank">Docs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="coming-soon.html" target="_blank" class="nav-link btn-get-started ms-lg-3 d-inline-block">Get Started</a>
+                        <a href="coming-soon.html" target="_blank" class="nav-link btn-get-started ms-lg-3 d-inline-block">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -91,10 +99,6 @@
                             <span>Decentralized APIs</span>
                             <span>Cross-chain Indexing</span>
                             <span>Decentralized APIs</span>
-                            <!-- <span>MassBit Route</span>
-                            <span>Cross-chain Indexing</span>
-                            <span>MassBit Insights</span>
-                            <span>MassBit Route</span> -->
                         </div>
                     </h1>
                     <h2 class="mb-banner-sub-heading">for DeFi and Web3 apps</h2>
@@ -102,7 +106,7 @@
                         MassBit’s mission is to become an innovative infrastructure to make DeFi & Web3 apps development faster, easier, more reliable, and more cost effective.
                     </div>
                     <div class="mt-4">
-                        <a href="coming-soon.html" target="_blank" class="btn btn-outline-primary px-5">Explore MassBit</a>
+                        <a href="#WhyMassBit" class="btn btn-outline-primary px-5">Explore MassBit</a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6">
@@ -149,12 +153,12 @@
                         </div>
                         <div class="mb-section-body">
                             <div class="mb-40 mb-mb-20px" data-aos="fade-left" data-aos-duration="500">
-                                MassBit Route will take the power out of centralized control and place it firmly into the hands of our decentralized global communities. MassBit Route is for everyone, whether you are a professional validator, an API provider, a Dev/Op engineer or even
-                                just a regular Joe with a machine to put to use. All parties joining the network will have to follow the MassBit protocol, which penalizes nodes for malicious behavior.
+                                We work with small API providers and validators to form decentralized gateways. Some API providers only utilize 20% of their capacities while validators or miners only do their work to earn rewards but waste other resources (data and APIs). With MassBit,
+                                our validators earn more rewards and serve numerous DeFi and Web3 apps. We also punish nodes for misbehaving!
                             </div>
                             <div data-aos="fade-up" data-aos-duration="500">
-                                <a href="coming-soon.html" target="_blank" class="btn btn-fw btn-primary btn-right-icon">
-                                    <span>Go to Decentralized APIs</span>
+                                <a href="massbit-route.html" class="btn btn-fw btn-primary btn-right-icon">
+                                    <span>Learn More</span>
                                 </a>
                             </div>
                         </div>
@@ -181,7 +185,7 @@
                             </div>
                             <div data-aos="fade-up" data-aos-duration="500">
                                 <a href="coming-soon.html" target="_blank" class="btn btn-fw btn-primary btn-right-icon">
-                                    <span>Go to Cross-chain Indexing</span>
+                                    <span>Learn More</span>
                                 </a>
                             </div>
                         </div>
@@ -209,10 +213,14 @@
                         </div>
                         <div class="mb-section-body">
                             <div class="mb-40 mb-mb-20px" data-aos="fade-left" data-aos-duration="500">
-                                MassBit Insights allows you to explore information on all major blockchain networks such as Solana, ETH, Bitcoin, BSC and Substrate to name as few. The product will not only allow users to verify price, transaction count, current epoch, market cap, block
-                                and slot height, but will also collate deeper analytics from raw blockchain data.
+                                MassBit Explorer allows you to check the information regarding all major blockchain networks. This project will allow users to verify price, transaction count, current epoch, market cap, block and slot height.
                             </div>
                             <div data-aos="fade-up" data-aos-duration="500">
+                                <a href="coming-soon.html" target="_blank" class="btn btn-fw btn-primary btn-right-icon">
+                                    <span>Learn More</span>
+                                </a>
+                            </div>
+                            <!-- <div data-aos="fade-up" data-aos-duration="500">
                                 <div class="dropdown">
                                     <button class="btn btn-fw btn-primary btn-dropdown-icon dropdown-toggle" type="button" id="dropdownMenuButtonAPI" data-bs-toggle="dropdown" aria-expanded="false">
                                         <span>Solana Explorer</span>
@@ -231,7 +239,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -474,8 +482,13 @@
                                     <img src="images/massBit-route.svg" alt="MassBit Route" />
                                 </div>
                                 <div class="mb-build-item-title">MassBit Route</div>
-                                <div class="mb-build-item-description">
+                                <div class="mb-build-item-description mb-40">
                                     Join us to build the powerful CDN of blockchains
+                                </div>
+                                <div class="text-center" data-aos="fade-up" data-aos-duration="500">
+                                    <a href="massbit-route.html" class="btn btn-primary btn-right-icon">
+                                        <span>Explore Solution</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -485,8 +498,13 @@
                                     <img src="images/cross-chain-indexing.svg" alt="Cross-chain Indexing" />
                                 </div>
                                 <div class="mb-build-item-title">Cross-chain Indexing</div>
-                                <div class="mb-build-item-description">
+                                <div class="mb-build-item-description mb-40">
                                     Join us to index blockchain insights for Defi and Web3 apps
+                                </div>
+                                <div class="text-center" data-aos="fade-up" data-aos-duration="500">
+                                    <a href="coming-soon.html" target="_blank" class="btn btn-primary btn-right-icon">
+                                        <span>Explore Solution</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -496,19 +514,24 @@
                                     <img src="images/massbit-insights.svg" alt="MassBit Insights" />
                                 </div>
                                 <div class="mb-build-item-title">MassBit Insights</div>
-                                <div class="mb-build-item-description">
+                                <div class="mb-build-item-description mb-40">
                                     Coming Soon
+                                </div>
+                                <div class="text-center" data-aos="fade-up" data-aos-duration="500">
+                                    <a href="coming-soon.html" target="_blank" class="btn btn-primary btn-right-icon">
+                                        <span>Explore Solution</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center" data-aos="fade-up" data-aos-duration="500">
+                    <!-- <div class="text-center" data-aos="fade-up" data-aos-duration="500">
                         <div>
                             <a href="coming-soon.html" target="_blank" class="btn btn-fw btn-primary btn-right-icon mw-210">
                                 <span>Choose Your Role</span>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -531,13 +554,16 @@
                             </div>
                         </div>
                         <div class="col-md-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
-                            <h3>BUILD WITH MASSBIT</h3>
+                            <h3>PRODUCTS</h3>
                             <ul>
                                 <li>
-                                    <a href="https://github.com/massbitprotocol/" target="_blank">Github</a>
+                                    <a href="massbit-route.html">MassBit Route</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" target="_blank">Developer Docs</a>
+                                    <a href="coming-soon.html">Cross-chain Indexing</a>
+                                </li>
+                                <li>
+                                    <a href="coming-soon.html">MassBit Insights</a>
                                 </li>
                             </ul>
                         </div>
@@ -682,7 +708,7 @@
                                 <a href="https://github.com/massbitprotocol/" target="_blank">
                                     <img src="images/socials/github.svg" alt="Github" />
                                 </a>
-                                <a href="coming-soon.html" target="_blank">
+                                <a href="https://discord.gg/jbaUzJYT" target="_blank">
                                     <img src="images/socials/discord.svg" alt="Discord" />
                                 </a>
                             </div>
@@ -725,7 +751,7 @@
     <!-- End Footer -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="plugins/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
     <!-- <script src="plugins/AOS/aos.js"></script> -->
     <script src="js/script.js?v=12"></script>
 </body>
