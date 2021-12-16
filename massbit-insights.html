@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="description" content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
+    <meta name="og:title" property="og:title" content="MassBit.io" />
+    <meta name="og:description" property="og:description" content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
+    <meta name="twitter:card" content="MassBit.io" />
+    <meta property="og:title" property="og:title" content="MassBit.io" />
+    <meta property="og:description" content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
+    <meta property="og:image" content="https://oht-design.net/massbit.png" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1200" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/fonts/airbnb-cereal-app/style.css" />
+    <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.theme.default.min.css" />
+    <!-- <link rel="stylesheet" href="plugins/AOS/aos.css" /> -->
+    <link rel="stylesheet" href="css/style.css?v=12" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZJ6DMKTCF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-GZJ6DMKTCF');
+    </script>
+
+    <title>MassBit Insights - MassBit.io</title>
+</head>
+
+<body>
+    <div class="wr-loading" id="wr_loading">
+        <img src="images/decor.svg" alt="loading..." height="80">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light mb-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="mb-logo" src="images/logo.svg" alt="MassBit" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto my-3 my-lg-0 align-items-center align-items-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#WhyMassBit">Why MassBit</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Developers
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown0">
+                            <li><a class="dropdown-item" target="_blank" href="https://docs.massbit.io/about/introduction">Docs</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://docs.massbit.io/about/contact-us">Supports</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://github.com/massbitprotocol/">Github</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://discord.gg/jbaUzJYT">Discord</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="massbit-route.html">MassBit Route</a></li>
+                            <li><a class="dropdown-item" href="cross-chain-indexing.html">Cross-chain Indexing</a></li>
+                            <li><a class="dropdown-item active" href="massbit-insights.html">MassBit Insights</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coming-soon.html" target="_blank">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="coming-soon.html" target="_blank" class="nav-link btn-get-started ms-lg-3 d-inline-block">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <header class="mb-header-small">
+        <div class="container">
+            <div class="row align-items-center align-items-xl-center align-items-lg-end">
+                <div class="col-xl-5 col-lg-6 mt-lg-0 mb-4">
+                    <h2 class="mb-banner-sub-heading">MassBit Insights</h2>
+                    <div class="mb-banner-description fs-18">MassBit Explorer allows you to check the information regarding all major blockchain networks. This project will allow users to verify price, transaction count, current epoch, market cap, block and slot height. </div>
+                </div>
+                <div class="col-xl-7 col-lg-6 pl-lg-0">
+                    <img src="images/GIF/insights.gif" class="img-fluid" alt="MassBit Insights" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main>
+        <section class="mb-section mb-section-overview pb-0" id="Overview">
+            <div class="container text-center">
+                <div data-aos="fade-up" class="mb-section-title d-flex align-content-center justify-content-md-center">
+                    <span class="pt-2">Overview...</span>
+                </div>
+                <div class="mb-section-body">
+                    <div data-aos="fade-up" class="row justify-content-center mb-40 mb-mb-10px">
+                        <div class="col-xl-9 text-md-center">
+                            With MassBit Route's global node network caching content and improving route paths, user's will see faster response. All nodes are also by their local communities. MBR utilizes the MassBit Verification Protocol, which means all participant nodes will
+                            have to stake and get incentives to verify each other using the MassBit Protocol, making sure they behave honestly.
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="row justify-content-center">
+                        <div class="col-md-3">
+                            <div class="mb-overview-item mb-overview-item-style-1">
+                                <div class="mb-overview-item-inner">
+                                    <div class="mb-overview-item-title">Price</div>
+                                    <div class="mb-overview-item-content">
+                                        <b>$240.44</b>
+                                        <span class="mb-card-trend mb-card-trend-up">8.41%</span>
+                                    </div>
+                                    <div class="mb-overview-item-more">
+                                        <span class="mb-card-vol">24h Vol: $5.2B</span>
+                                        <span class="mb-card-cap">MCap: $72.4B</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-overview-item mb-overview-item-style-2">
+                                <div class="mb-overview-item-inner">
+                                    <div class="mb-overview-item-title">Active Stake</div>
+                                    <div class="mb-overview-item-content">
+                                        <b>397.2M /</b>&nbsp;
+                                        <span>508.2M</span>
+                                    </div>
+                                    <div class="mb-overview-item-more">
+                                        <span>Delinquent stake: 0.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-overview-item mb-overview-item-style-3">
+                                <div class="mb-overview-item-inner">
+                                    <div class="mb-overview-item-title">Transaction Count</div>
+                                    <div class="mb-overview-item-content">
+                                        <b>37,217,917,398</b>
+                                    </div>
+                                    <div class="mb-overview-item-more">
+                                        <span>Transactions per Second</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-overview-item mb-overview-item-style-4">
+                                <div class="mb-overview-item-inner">
+                                    <div class="mb-overview-item-title">Circulating Supply</div>
+                                    <div class="mb-overview-item-content">
+                                        <b>301.1M /</b>&nbsp;
+                                        <span>508.2M</span>
+                                    </div>
+                                    <div class="mb-overview-item-more">
+                                        <span>59.2% is circulating</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-overview-chart mb-4">
+                        <img src="images/demo-chart-overview.png" class="w-100" />
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-overview-chart-small">
+                                <div class="mb-overview-chart-small-title">
+                                    LATEST BLOCKS
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Slot</th>
+                                                <th>Time (UTC)</th>
+                                                <th>Tx Count</th>
+                                                <th>Reward (SOL)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>1,024</td>
+                                                <td>0.002575</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-overview-chart-small">
+                                <div class="mb-overview-chart-small-title">
+                                    LATEST TRANSACTIONS
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Slot</th>
+                                                <th>Time (UTC)</th>
+                                                <th>Instructions</th>
+                                                <th>Fee (SOL)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#104810031</td>
+                                                <td>1 minute ago</td>
+                                                <td>Unknown</td>
+                                                <td>0.000005</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Why MassBit -->
+
+        <section class="mb-section mb-section-start-with-massbit" id="BuildingWithMassBit">
+            <div class="mb-decor">
+                <div class="decor-1"></div>
+                <div class="decor-2"></div>
+                <div class="decor-3"></div>
+                <div class="decor-4"></div>
+            </div>
+            <div class="mb-section-start-with-massbit-container container">
+                <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
+                    <span>Title</span>
+                </div>
+                <div class="mb-section-body">
+                    <div class="mb-30 text-center mb-mb-10px" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                        Choose your role
+                    </div>
+                    <div class="row gx-xl-5 justify-content-center mb-36 mb-mb-10px owl-theme" id="slideMobile">
+                        <div class="col-md-4">
+                            <div class="mb-start-with-mi">
+                                <div class="mb-start-with-mi-inner">
+                                    <div class="mb-start-with-mi-icon">
+                                        <img src="images/logo-vertical-color-white-2.png" alt="Solana Explorer" />
+                                    </div>
+                                    <div class="mb-start-with-mi-title">Solana Explorer</div>
+                                    <div class="mb-start-with-mi-description">Explore Solana Blockchain</div>
+                                    <div class="mb-start-with-mi-action">
+                                        <a class="btn btn-link-white btn-right-icon" href="coming-soon.html">
+                                            <span>Get Started</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-start-with-mi">
+                                <div class="mb-start-with-mi-inner">
+                                    <div class="mb-start-with-mi-icon">
+                                        <img src="images/eth.png" alt="Ethereum Explorer" />
+                                    </div>
+                                    <div class="mb-start-with-mi-title">Ethereum Explorer</div>
+                                    <div class="mb-start-with-mi-description">Coming soon...</div>
+                                    <div class="mb-start-with-mi-action">
+                                        <a class="btn btn-link-white btn-right-icon" href="coming-soon.html">
+                                            <span>Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-start-with-mi">
+                                <div class="mb-start-with-mi-inner">
+                                    <div class="mb-start-with-mi-icon">
+                                        <img src="images/subtrate.png" alt="Substrate Explorer" />
+                                    </div>
+                                    <div class="mb-start-with-mi-title">Substrate Explorer</div>
+                                    <div class="mb-start-with-mi-description">Coming soon...</div>
+                                    <div class="mb-start-with-mi-action">
+                                        <a class="btn btn-link-white btn-right-icon" href="coming-soon.html">
+                                            <span>Learn More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Start Building with MassBit Insights -->
+    </main>
+    <!-- End Main -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-4 d-none d-md-block" data-aos="fade-right" data-aos-duration="500">
+                            <div class="mb-20 mt-1">
+                                <img src="images/logo-white.svg" height="42" alt="MassBit" />
+                            </div>
+                            <div class="mb-copyright">
+                                © Copyright 2021 MassBit.<br/> All rights reserved.
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                            <h3>PRODUCTS</h3>
+                            <ul>
+                                <li>
+                                    <a href="massbit-route.html">MassBit Route</a>
+                                </li>
+                                <li>
+                                    <a href="cross-chain-indexing.html">Cross-chain Indexing</a>
+                                </li>
+                                <li>
+                                    <a href="massbit-insights.html">MassBit Insights</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+                            <h3>ABOUT</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://docs.massbit.io/about/introduction" target="_blank">Whitepaper</a>
+                                </li>
+                                <li>
+                                    <a href="coming-soon.html" target="_blank">One page</a>
+                                </li>
+                                <li>
+                                    <a href="coming-soon.html" target="_blank">Products</a>
+                                </li>
+                                <li>
+                                    <a href="https://codelight.breezy.hr/" target="_blank">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="https://docs.massbit.io/about/contact-us" target="_blank">Customer Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <h3>GET OUR EXCLUSIVE NEWS IN YOUR INBOX <span class="text-danger">*</span></h3>
+                            <div class="mb-30">
+                                <!-- Begin Sendinblue Form -->
+                                <!-- START - We recommend to place the below code in head tag of your website html  -->
+
+                                <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+                                <style>
+                                    .entry__label {
+                                        font-family: 'Airbnb Cereal App Book';
+                                    }
+                                    
+                                    .sib-form .entry__field {
+                                        margin: 0 !important;
+                                    }
+                                    
+                                    .sib-form,
+                                    .sib-form-container,
+                                    #sib-container,
+                                    .sib-form-block {
+                                        padding: 0 !important;
+                                        margin: 0 !important;
+                                    }
+                                </style>
+                                <!--  END - We recommend to place the above code in head tag of your website html -->
+                                <!-- START - We recommend to place the below code where you want the form in your website html  -->
+                                <div class="sib-form" style="background-color: transparent;">
+                                    <div id="sib-form-container" class="sib-form-container">
+                                        <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
+                                            <form id="sib-form" method="POST" action="https://a5f651f1.sibforms.com/serve/MUIEAK8orXdmPYsPcPyMh1o6AZapz2jJWTVp2uZtUp38kr5gNy-B8EREL2fOU9tC7lx1fzy3lneVWPOY0bMqw3pUsBT92YBSJtSqxSXIpEW7yTc0wRZAhjnDCj5K6sMPM4DUPu4_0lm21DDKifncX8X-jXJvYa1ZhpbU7usbhjmx5cDjTjzTKBjroMJ2uY6YY25Lf78qGgFYHoHi"
+                                                data-type="subscription">
+                                                <div class="sib-input sib-form-block">
+                                                    <div class="form__entry entry_block">
+                                                        <div class="form__label-row ">
+                                                            <div class="entry__field text-dark">
+                                                                <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email address" data-required="true" required />
+                                                            </div>
+                                                        </div>
+                                                        <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+                                                    </div>
+                                                </div>
+                                                <div class="sib-form-block" style="text-align: left;margin-top: 8px !important;">
+                                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; color:#FFFFFF; background-color:#2c3acf; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                                            <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                        </svg>
+                                                        SUBSCRIBE
+                                                    </button>
+                                                </div>
+                                                <input type="text" name="email_address_check" value="" class="input--hidden">
+                                                <input type="hidden" name="locale" value="en">
+                                            </form>
+                                        </div>
+                                        <div id="error-message" class="sib-form-message-panel mt-2" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+                                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+            </svg>
+                                                <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                                            </div>
+                                        </div>
+                                        <div id="success-message" class="sib-form-message-panel mt-2" style="font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+                                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+            </svg>
+                                                <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- END - We recommend to place the below code where you want the form in your website html  -->
+
+                                <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+                                <script>
+                                    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+                                    window.LOCALE = 'en';
+                                    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+                                    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+                                    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+                                    window.translation = {
+                                        common: {
+                                            selectedList: '{quantity} list selected',
+                                            selectedLists: '{quantity} lists selected'
+                                        }
+                                    };
+                                    var AUTOHIDE = Boolean(0);
+                                </script>
+                                <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+                                <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+                                <!-- End Sendinblue Form -->
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                            <div class="mb-socials justify-content-lg-start justify-content-md-end justify-content-start">
+                                <a href="https://twitter.com/massbitprotocol" target="_blank">
+                                    <img src="images/socials/twitter.svg" alt="Twitter" />
+                                </a>
+                                <a href="https://massbit.medium.com/" target="_blank">
+                                    <img src="images/socials/medium.svg" alt="Medium" />
+                                </a>
+                                <a href="https://t.me/massbit" target="_blank">
+                                    <img src="images/socials/telegram.svg" alt="Telegram" />
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCMdDh0sCnsW_dyEpG-MlnfA" target="_blank">
+                                    <img src="images/socials/youtube.svg" alt="Youtube" />
+                                </a>
+                                <a href="https://www.facebook.com/massbit.io" target="_blank">
+                                    <img src="images/socials/facebook.svg" alt="Facebook" />
+                                </a>
+                                <a href="https://www.instagram.com/massbit.io/" target="_blank">
+                                    <img src="images/socials/instagram.svg" alt="Instagram" />
+                                </a>
+                                <a href="https://github.com/massbitprotocol/" target="_blank">
+                                    <img src="images/socials/github.svg" alt="Github" />
+                                </a>
+                                <a href="https://discord.gg/jbaUzJYT" target="_blank">
+                                    <img src="images/socials/discord.svg" alt="Discord" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-block d-md-none mt-4 pt-3" style="border-top: 1px rgba(255,255,255,.4) solid;">
+                <div class="mb-20">
+                    <img src="images/logo-white.svg" height="40" alt="MassBit" />
+                </div>
+                <div class="mb-copyright">
+                    © Copyright 2021 MassBit. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="to_top">
+        <span><i class="fas fa-arrow-up"></i></span>
+    </a>
+
+    <div class="mb-right-box-wrap">
+        <div class="mb-right-box">
+            <div class="mb-right-box-logo">
+                <img src="images/decor.svg" height="24" width="22" alt="MassBit logo">
+            </div>
+            <div class="mb-right-box-heading">
+                <div>MassBit is hiring. Come join an industry-leading team.</div>
+            </div>
+            <a rel="noopener" href="https://codelight.breezy.hr/p/211cb662c703-digital-marketing-specialist" target="_blank" class="btn btn-outline-primary btn-sm w-100">See current openings</a>
+
+            <a href="#" class="mb-right-box-close">
+                <img src="images/close-icon.svg" width="10" height="10" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="js/script.js?v=12"></script>
+</body>
+
+</html>
