@@ -51,11 +51,12 @@ body {
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1420px;
+        max-width: 1420px !important;
     }
 }
 
-@media (min-width: 1700px) {
+
+/* @media (min-width: 1700px) {
     .container,
     .container-lg,
     .container-md,
@@ -75,7 +76,7 @@ body {
     .container-xxl {
         max-width: 1820px;
     }
-}
+} */
 
 .mb-20 {
     margin-bottom: 20px;
