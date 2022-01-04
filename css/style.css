@@ -858,7 +858,18 @@ header::before {
     color: #717591;
 }
 
-@media (min-width: 768px) {
+.img-tab-preview {
+    height: 180px;
+    transition: all ease-in-out .3s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media (min-width: 767px) {
+    .img-tab-preview {
+        height: 380px;
+    }
     .mb-build-item-description {
         line-height: 1.5;
         height: 3rem;
@@ -1173,14 +1184,10 @@ header::before {
     color: #434C88;
 }
 
-.mb-iafe-accordion-image {
-    display: none;
-}
-
 .mb-discover-item {
     background-color: #E6EEFF;
     border-radius: 12px;
-    margin-bottom: 24px;
+    margin: 0 16px 24px 16px;
     height: calc(100% - 24px);
     padding: 30px 24px 24px 24px;
     transition: all ease-in-out .3s;
@@ -1222,6 +1229,7 @@ header::before {
 .mb-discover-item-image svg {
     width: 64px;
     height: 64px;
+    transition: all ease-in-out .3s;
 }
 
 .mb-discover-item-title {
@@ -1289,6 +1297,18 @@ header::before {
 
 .mb-discover-item.selected .mb-discover-item-action a {
     color: #F1F6FF !important;
+}
+
+.mb-discover-item:hover {
+    box-shadow: 0 10px 20px -10px rgb(17 38 146 / 40%);
+}
+
+.mb-discover-item:hover .mb-discover-item-image svg {
+    transform: scale(1.2);
+}
+
+.mb-discover-item:hover a::before {
+    right: 15px;
 }
 
 .mb-start-with-mi {
@@ -1892,6 +1912,9 @@ footer ul li a:hover {
     .mb-section-start-with-massbit {
         margin-top: 100px;
     }
+    .mb-section.mb-cci-section-realtime {
+        padding-bottom: 70px !important;
+    }
     .mb-section-start-with-massbit::before {
         top: -99px;
         height: 100px;
@@ -1975,9 +1998,17 @@ footer ul li a:hover {
     .mb-socials a {
         margin-right: 10px;
     }
+    .mb-discover-item-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 @media(max-width:767px) {
+    #WhyCrossChainIndexing {
+        padding-top: 0 !important;
+        margin-top: -70px;
+    }
     #worldChart {
         height: 300px !important;
     }
@@ -2199,6 +2230,15 @@ footer ul li a:hover {
 
 .cross-chain-page {
     position: relative;
+}
+
+.cross-chain-page .navbar-light:not(.mb-navbar-fixed) .navbar-toggler {
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.cross-chain-page .navbar-light:not(.mb-navbar-fixed) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .cross-chain-page .mb-navbar:not(.mb-navbar-fixed) .logo-default {

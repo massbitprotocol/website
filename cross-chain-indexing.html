@@ -75,12 +75,12 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="massbit-route.html">MassBit Route</a></li>
-                            <li><a class="dropdown-item active" href="coming-soon.html">Cross-chain Indexing</a></li>
-                            <li><a class="dropdown-item" href="coming-soon.html">MassBit Insights</a></li>
+                            <li><a class="dropdown-item active" href="cross-chain-indexing.html">Cross-chain Indexing</a></li>
+                            <li><a class="dropdown-item" href="massbit-insights.html">MassBit Insights</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://blog.massbit.io">Blog</a>
+                        <a class="nav-link" href="coming-soon.html" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a href="coming-soon.html" target="_blank" class="nav-link btn-get-started ms-lg-3 d-inline-block">Contact</a>
@@ -94,18 +94,18 @@
     <header class="mb-header-small">
         <div class="container">
             <div class="row align-items-center align-items-xl-center align-items-lg-end">
-                <div class="col-xl-5 col-lg-6 mt-lg-0 mb-4 pe-lg-0">
+                <div class="col-xl-5 col-lg-6 mt-lg-0 mb-5 pe-lg-0">
                     <h2 class="mb-banner-sub-heading">Query & Transform<br/>The World's Data</h2>
                     <div class="mb-banner-description fs-18">
                         Blockchain indexing is essential to DeFi and Web3 development. MassBit provides the infrastructure to index data from all the different blockchains, not only indexing smart contracts but also blockchain raw data for analytics purposes. This greatly reduces
                         the pipeline length for devlopment teams. We support indexing logic in different languages as well, including Rust, AssemblyScript and TypeScript.
                     </div>
                     <div class="mb-banner-action">
-                        <a href="#" class="btn btn-primary me-3">Explore Community Indexers</a>
+                        <a href="#" class="btn btn-primary me-3 mb-3 mb-md-0">Explore Community Indexers</a>
                         <a href="#" class="btn-outline-light">Create Indexer</a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-6 pl-lg-0">
+                <div class="col-xl-7 col-lg-6 pl-lg-0 mb-5 mb-md-0">
                     <img src="images/cross-chain-indexing-banner.png" class="img-fluid" alt="Cross-chain Indexing" />
                 </div>
             </div>
@@ -120,16 +120,16 @@
                 </div>
                 <div class="mb-section-body" style="min-height: 440px;">
                     <div data-aos="fade-up" class="row justify-content-center mb-40 mb-mb-10px">
-                        <div class="col-xl-9 text-md-center">
+                        <div class="col-xl-9 text-center">
                             The goal of the Massbit Indexer is to bring scalability and interoperability for Indexers.
                         </div>
                     </div>
                     <div class="row gx-xl-5 justify-content-center">
                         <div class="col-md-6">
                             <div class="mb-iafe-accordion accordion mt-xl-5" id="accordionExample">
-                                <div class="accordion-item">
+                                <div class="accordion-item" id="Collapse1">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button id="accordion-button-1" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Cross-chain
                                         </button>
                                     </h2>
@@ -141,7 +141,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button id="accordion-button-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             Utilizing Cross-chain Indexing saves developers 80% of their time
                                         </button>
                                     </h2>
@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <button id="accordion-button-3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             Options are both flexible and adaptable when running a decentralized network of workers    
                                         </button>
                                     </h2>
@@ -166,9 +166,9 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img id="img-tab-1" src="images/GIF/cross-chain.gif" alt="Cross-chain" class="mb-iafe-accordion-image img-fluid">
-                            <img id="img-tab-2" src="images/Utilizing.png" alt="Easy to use" class="mb-iafe-accordion-image img-fluid">
-                            <img id="img-tab-3" src="images/Options.png" alt="Mobile" class="mb-iafe-accordion-image img-fluid">
+                            <div class="img-tab-preview">
+                                <!-- <img id="img-tab-x" src="images/GIF/cross-chain.gif" class="mb-iafe-accordion-image img-fluid"> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                 </div>
                 <div class="mb-section-body">
                     <div data-aos="fade-up" class="row justify-content-center mb-40 mb-mb-10px">
-                        <div class="col-xl-9 text-md-center">
+                        <div class="col-xl-9 text-md-center text-start">
                             The global Cross-chain Indexing community is growing everyday.<br/>Join and become a part of something transformative!
                         </div>
                     </div>
@@ -191,7 +191,7 @@
                     <div data-aos="fade-up" class="mb-realtime-card">
                         <div class="mb-realtime-card-header">
                             <div class="mb-realtime-card-title">
-                                <div style="font-size: 16px;line-height: 22px;color: #434C88;">TOTAL INDEXED TRANSACTIONS / DAYS</div>
+                                <div class="text-start" style="font-size: 16px;line-height: 22px;color: #434C88;">TOTAL INDEXED TRANSACTIONS / DAYS</div>
                                 <div style="font-family: 'Airbnb Cereal App Medium';font-size: 14px;line-height: 20px;color: #717591;" id="txtDateRange">Nov 22 -Dec 22</div>
                             </div>
                             <div class="mb-realtime-card-filter">
@@ -208,7 +208,7 @@
                             <span>Indexed Transactions</span>
                         </div>
                         <div class="mb-realtime-card-body">
-                            <div class="w-100" id="totalIndexedTransactionsChart" style="height: 338px;"></div>
+                            <div class="w-100" id="totalIndexedTransactionsChart" style="height: 200px;"></div>
                         </div>
                     </div>
 
@@ -282,10 +282,10 @@
                 </div>
                 <div class="mb-section-body">
                     <div data-aos="fade-up" class="row justify-content-center mb-30 mb-mb-10px">
-                        <div class="col-xl-9 text-xl-center text-justify">Choose a role and get to work right away!</div>
+                        <div class="col-xl-9 text-center">Choose a role and get to work right away!</div>
                     </div>
                     <div class="row justify-content-center owl-theme" id="slideMobile">
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-6">
                             <div class="mb-discover-item mb-discover-item-style-1 pe-xl-5 selected">
                                 <div class="mb-discover-item-inner pe-xl-5">
                                     <div class="mb-discover-item-image">
@@ -311,7 +311,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-6">
                             <div class="mb-discover-item mb-discover-item-style-2 pe-xl-5">
                                 <div class="mb-discover-item-inner pe-xl-5">
                                     <div class="mb-discover-item-image">
@@ -365,10 +365,10 @@
                                     <a href="massbit-route.html">MassBit Route</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html">Cross-chain Indexing</a>
+                                    <a href="cross-chain-indexing.html">Cross-chain Indexing</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html">MassBit Insights</a>
+                                    <a href="massbit-insights.html">MassBit Insights</a>
                                 </li>
                             </ul>
                         </div>
@@ -559,18 +559,28 @@
     <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
     <script src="js/script.js?v=12"></script>
     <script>
-        jQuery('#img-tab-1').show();
-        jQuery('#headingOne').on('click', () => {
-            jQuery('.mb-iafe-accordion-image').fadeOut(300);
-            jQuery('#img-tab-1').fadeIn(300);
-        })
-        jQuery('#headingTwo').on('click', () => {
-            jQuery('.mb-iafe-accordion-image').fadeOut(300);
-            jQuery('#img-tab-2').fadeIn(300);
-        })
-        jQuery('#headingThree').on('click', () => {
-            jQuery('.mb-iafe-accordion-image').fadeOut(300);
-            jQuery('#img-tab-3').fadeIn(300);
+        function bgImageChange(newBg) {
+            jQuery('.img-tab-preview').css('background-image', newBg);
+        }
+        bgImageChange('url(/images/GIF/cross-chain.gif)');
+
+        var currentId = 'accordion-button-1';
+        $(".accordion-button").mouseover(function() {
+            currentId = $(this).attr('id');
+            window.setTimeout(() => {
+                if ($(this).attr('id') === currentId) {
+                    $(this).trigger("click");
+                    if (currentId === 'accordion-button-2') {
+                        bgImageChange('url(/images/Utilizing.png)');
+                    } else {
+                        if (currentId === 'accordion-button-3') {
+                            bgImageChange('url(/images/Options.png)');
+                        } else {
+                            bgImageChange('url(/images/GIF/cross-chain.gif)');
+                        }
+                    }
+                }
+            }, 300)
         })
     </script>
 </body>
