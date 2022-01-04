@@ -44,7 +44,124 @@
     <div class="wr-loading" id="wr_loading">
         <img src="images/decor.svg" alt="loading..." height="80">
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light mb-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light mb-navbar flex-lg-wrap fixed-top">
+        <style>
+            body {
+                padding-top: calc(68px + 108px);
+            }
+            
+            .mb-banner-testnet-inner {
+                font-family: "Airbnb Cereal App Book";
+                background-color: #27319B;
+                border: 1px solid rgba(5, 12, 114, 0.1);
+                box-sizing: border-box;
+                box-shadow: 0px 10px 33px rgba(0, 0, 0, 0.05);
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                color: #F1F6FF;
+                background-image: url(/images/banner-testnet-bg.svg), url(/images/banner-testnet-bg2.svg);
+                background-repeat: no-repeat, no-repeat;
+                background-position: bottom 0 left -21px, bottom 0 right -33px;
+                padding: 26px 32px 26px 78px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                transition: all ease-in-out .3s;
+            }
+            
+            .mb-banner-testnet-inner div {
+                padding: 5px 0;
+            }
+            
+            .mb-banner-testnet-inner div span {
+                font-family: "Airbnb Cereal App Medium";
+                font-weight: 500;
+            }
+            
+            .mb-banner-testnet-inner div b {
+                font-family: "Airbnb Cereal App Medium";
+                font-weight: bold;
+                color: #FAA001;
+            }
+            
+            .mb-banner-testnet-inner a {
+                padding-left: 0 !important;
+                font-size: 18px;
+                line-height: 20px;
+                color: #F1F6FF;
+                font-family: "Airbnb Cereal App Medium";
+            }
+            
+            .mb-banner-testnet-inner a:hover {
+                color: #fff;
+            }
+            
+            .mb-banner-testnet-inner a::before {
+                transition: all ease-in-out .3s;
+            }
+            
+            .mb-banner-testnet-inner a:hover::before {
+                right: 10px;
+            }
+            
+            .mb-navbar-fixed {
+                padding-top: 0;
+            }
+            
+            .mb-navbar-fixed .mb-banner-testnet .mb-banner-testnet-inner {
+                border-radius: 0;
+                padding: 17px 24px;
+                justify-content: center;
+            }
+            
+            .mb-navbar-fixed .mb-banner-testnet .mb-banner-testnet-inner div {
+                padding-right: 50px;
+            }
+            
+            .mb-navbar-fixed .mb-banner-testnet .container {
+                max-width: 100vw !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            
+            @media(max-width:991px) {
+                .mb-banner-testnet-inner {
+                    justify-content: space-between !important;
+                    padding: 10px 20px !important;
+                    background-position: bottom 0 left -41px, bottom 0 right -33px;
+                }
+                .mb-banner-testnet-inner,
+                .mb-banner-testnet-inner a {
+                    font-size: 13px;
+                    line-height: 1.3;
+                }
+                .mb-navbar-fixed .mb-banner-testnet .mb-banner-testnet-inner div {
+                    padding-right: 20px;
+                }
+            }
+            
+            @media(max-width:767px) {
+                .mb-banner-testnet-inner {
+                    font-size: 12px;
+                    justify-content: center !important;
+                    padding: 6px 10px !important;
+                    text-align: center;
+                    background-position: bottom 0 left -91px, bottom 0 right -33px;
+                }
+            }
+        </style>
+        <div class="mb-banner-testnet w-100">
+            <div class="container">
+                <div class="mb-banner-testnet-inner">
+                    <div>Come join our MassBit Route <span>Testnet</span> from <b>January 4th</b> until <b>February 21st, 2022</b> 🎉 </div>
+                    <a href="#" class="btn btn-link-white btn-right-icon"><span>Join Testnet</span></a>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img class="mb-logo" src="images/logo.svg" alt="MassBit" />
@@ -74,12 +191,12 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item active" href="massbit-route.html">MassBit Route</a></li>
-                            <li><a class="dropdown-item" href="coming-soon.html">Cross-chain Indexing</a></li>
-                            <li><a class="dropdown-item" href="coming-soon.html">MassBit Insights</a></li>
+                            <li><a class="dropdown-item" href="cross-chain-indexing.html">Cross-chain Indexing</a></li>
+                            <li><a class="dropdown-item" href="massbit-insights.html">MassBit Insights</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://blog.massbit.io">Blog</a>
+                        <a class="nav-link" href="coming-soon.html" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a href="coming-soon.html" target="_blank" class="nav-link btn-get-started ms-lg-3 d-inline-block">Contact</a>
@@ -334,7 +451,7 @@
                                         Learn more about how we can help you realize your dAPI dream.
                                     </div>
                                     <div class="text-start" data-aos="fade-up" data-aos-duration="500">
-                                        <a href="https://dapi.massbit.io/users" target="_blank" class="btn btn-link-white btn-right-icon">
+                                        <a href="https://dapi-staging.massbit.io/users" target="_blank" class="btn btn-link-white btn-right-icon">
                                             <span>Get Started</span>
                                         </a>
                                     </div>
@@ -352,7 +469,7 @@
                                         Build and improve network speeds by caching data and building dynamic rules.
                                     </div>
                                     <div class="text-start" data-aos="fade-up" data-aos-duration="500">
-                                        <a href="https://dapi.massbit.io/gateways" target="_blank" class="btn btn-link-white btn-right-icon">
+                                        <a href="https://dapi-staging.massbit.io/gateways" target="_blank" class="btn btn-link-white btn-right-icon">
                                             <span>Get Started</span>
                                         </a>
                                     </div>
@@ -370,7 +487,7 @@
                                         Become a node on our network today to build and start receiving rewards.
                                     </div>
                                     <div class="text-start" data-aos="fade-up" data-aos-duration="500">
-                                        <a href="https://dapi.massbit.io/nodes" target="_blank" class="btn btn-link-white btn-right-icon">
+                                        <a href="https://dapi-staging.massbit.io/nodes" target="_blank" class="btn btn-link-white btn-right-icon">
                                             <span>Get Started</span>
                                         </a>
                                     </div>
@@ -405,10 +522,10 @@
                                     <a href="massbit-route.html">MassBit Route</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html">Cross-chain Indexing</a>
+                                    <a href="cross-chain-indexing.html">Cross-chain Indexing</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html">MassBit Insights</a>
+                                    <a href="massbit-insights.html">MassBit Insights</a>
                                 </li>
                             </ul>
                         </div>
