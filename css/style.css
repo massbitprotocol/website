@@ -134,6 +134,11 @@ body {
     border: 1px solid #2C3ACF;
 }
 
+.btn-outline-primary {
+    padding: 13px 20px;
+    border-radius: 8px;
+}
+
 .btn-primary:hover {
     box-shadow: 0 10px 20px -10px rgb(17 38 146 / 40%) !important;
 }
@@ -200,7 +205,7 @@ body {
 .btn-dropdown-menu li .dropdown-item {
     padding: 5px 8px;
     font-size: 14px;
-    color: #050C72;
+    color: #27319B;
     font-weight: bold;
     transition: all ease-in-out .3s;
     background-color: transparent;
@@ -328,7 +333,7 @@ body {
 
 .mb-navbar.navbar-light .nav-link {
     font-size: 16px;
-    color: #050C72;
+    color: #27319B;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -372,7 +377,7 @@ body {
 
 .mb-header-dropdown-menu li .dropdown-item {
     padding: 10px 15px;
-    color: #050C72;
+    color: #27319B;
     transition: all ease-in-out .3s;
     background-color: transparent;
 }
@@ -458,7 +463,7 @@ header::before {
     font-weight: bold;
     font-size: 46px;
     line-height: 50px;
-    color: #050C72;
+    color: #27319B;
 }
 
 .mb-banner-description {
@@ -476,7 +481,7 @@ header::before {
     font-weight: bold;
     font-size: 44px;
     line-height: 44px;
-    color: #050C72;
+    color: #27319B;
     margin-bottom: 20px;
 }
 
@@ -516,7 +521,7 @@ header::before {
     font-family: 'Airbnb Cereal App Medium';
     font-size: 20px;
     line-height: 28px;
-    color: #050C72;
+    color: #27319B;
     margin-bottom: 5px;
 }
 
@@ -847,7 +852,7 @@ header::before {
 .mb-build-item-title {
     font-size: 20px;
     line-height: 28px;
-    color: #050C72;
+    color: #27319B;
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -904,7 +909,7 @@ header::before {
 }
 
 .mb-build-item-style-1 {
-    background-color: #050C72;
+    background-color: #27319B;
 }
 
 .mb-build-item-style-1::before {
@@ -1072,7 +1077,7 @@ header::before {
     font-weight: bold;
     font-size: 30px;
     line-height: 32px;
-    color: #050C72;
+    color: #27319B;
     margin-right: 12px;
 }
 
@@ -1169,7 +1174,7 @@ header::before {
 }
 
 .mb-iafe-accordion .accordion-button:not(.collapsed) {
-    color: #050C72;
+    color: #27319B;
 }
 
 .mb-iafe-accordion .accordion-button:not(.collapsed)::after {
@@ -1242,7 +1247,7 @@ header::before {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #050C72;
+    color: #27319B;
     font-family: "Airbnb Cereal App Medium";
 }
 
@@ -1342,7 +1347,7 @@ header::before {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #050C72;
+    color: #27319B;
     font-family: "Airbnb Cereal App Medium";
 }
 
@@ -1405,7 +1410,7 @@ header::before {
 }
 
 .mb-overview-item-style-1 {
-    background-color: #050C72;
+    background-color: #27319B;
 }
 
 .mb-overview-item-style-1::before {
@@ -1504,7 +1509,7 @@ header::before {
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
-    color: #050C72;
+    color: #27319B;
 }
 
 .mb-overview-chart-small table thead {
@@ -1530,6 +1535,215 @@ header::before {
     color: #434C88;
     padding: 12px 30px;
     border-color: #E9EBFA;
+}
+
+
+/* Branding */
+
+.mb-card-download {
+    background: #27319B;
+    border-radius: 8px;
+    padding: 30px;
+    color: #fff;
+}
+
+.mb-card-download h3 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.mb-card-download p {
+    opacity: .7;
+    margin-bottom: 0;
+}
+
+.mb-bg-light {
+    background: #F9FAFB;
+}
+
+.mb-section-brand-style-guide img {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+}
+
+.mb-logo-item {
+    margin-bottom: 20px;
+}
+
+.mb-logo-image {
+    border-radius: 8px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 10px;
+    border: 1px #E2E2E2 solid;
+}
+
+.mb-logo-item.primary .mb-logo-image {
+    background-color: #fff;
+}
+
+.mb-logo-item.inverted-primary .mb-logo-image {
+    background-color: #27319B;
+}
+
+.mb-logo-item.monotone-black .mb-logo-image {
+    background-color: #fff;
+}
+
+.mb-logo-item.monotone-white .mb-logo-image {
+    background-color: #181818;
+}
+
+.mb-logo-image img {
+    max-width: 100%;
+}
+
+.mb-logo-title {
+    font-weight: bold;
+    color: #252728;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.mb-logo-description {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.mb-logo-download a {
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+    color: #27319B;
+    font-size: 17px;
+}
+
+.mb-logo-download a:hover {
+    color: #3A2D78;
+}
+
+.mb-color-group {
+    margin-bottom: 32px;
+}
+
+.mb-color-group-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #252728;
+    margin-bottom: 10px;
+}
+
+.mb-color-item {
+    margin-bottom: 10px;
+    height: 108px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    box-sizing: content-box;
+}
+
+.mb-color-group.neutral .mb-color-item {
+    height: 54px;
+}
+
+.mb-font-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #252728;
+    margin-bottom: 10px;
+}
+
+.mb-font-ref {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #27319B;
+    transition: all ease-in-out .3s;
+}
+
+.mb-font-ref svg {
+    margin-right: 8px;
+}
+
+.mb-font-ref:hover {
+    color: #3A2D78;
+}
+
+.mb-font-type {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #888888;
+}
+
+.mb-font-bold {
+    font-weight: 700;
+    font-family: 'Airbnb Cereal App Medium';
+}
+
+.mb-font-medium {
+    font-family: 'Airbnb Cereal App Medium';
+    font-weight: 500;
+}
+
+.mb-font-regular {
+    font-weight: 400;
+}
+
+.btn-download {
+    padding: 13px 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    border-color: #fff;
+    color: #27319B !important;
+    min-width: 180px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all ease-in-out .3s;
+}
+
+.btn-download:hover {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff !important;
+}
+
+.mb-card-cta {
+    background-color: #F1F6FF;
+    padding: 30px 50px;
+    border-radius: 8px;
+}
+
+.mb-card-cta h3 {
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.mb-card-cta p {
+    opacity: .7;
+    margin-bottom: 0;
+}
+
+.mb-card-cta .btn {
+    font-size: 16px;
+    margin: 0 4px;
 }
 
 
@@ -2564,7 +2778,7 @@ body.testnet .mb-right-box {
 }
 
 body.testnet .mb-right-box-close {
-    background: #050C72;
+    background: #27319B;
     box-shadow: 0px 8px 20px rgba(1, 0, 63, 0.25);
     width: 50px;
     height: 50px;
@@ -2582,7 +2796,7 @@ body.testnet .mb-right-box-heading {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #050C72;
+    color: #27319B;
 }
 
 body.testnet .mb-right-box-content {
@@ -2650,7 +2864,7 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
     display: none;
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
-    background-color: #050C72;
+    background-color: #27319B;
     box-shadow: 0px 8px 20px rgba(1, 0, 63, 0.25);
     width: 50px;
     height: 50px;
@@ -2708,7 +2922,7 @@ body.testnet .mb-right-box-socials a:not(:last-child) {
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
-    color: #050C72;
+    color: #27319B;
     margin-bottom: 32px;
 }
 
