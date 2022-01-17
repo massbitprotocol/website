@@ -1540,6 +1540,13 @@ header::before {
 
 /* Branding */
 
+.mb-section-description {
+    font-family: 'Airbnb Cereal App Book';
+    font-size: 20px;
+    line-height: 48px;
+    color: #434C88;
+}
+
 .mb-card-download {
     background: #27319B;
     border-radius: 8px;
@@ -1566,7 +1573,7 @@ header::before {
 
 .mb-section-brand-style-guide img {
     border-radius: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     width: 100%;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
     box-sizing: content-box;
@@ -1619,6 +1626,10 @@ header::before {
     font-size: 17px;
 }
 
+.mb-logo-download {
+    display: none;
+}
+
 .mb-logo-download a {
     margin-right: 20px;
     text-decoration: none;
@@ -1643,18 +1654,42 @@ header::before {
 }
 
 .mb-color-item {
-    margin-bottom: 10px;
-    height: 108px;
+    margin-bottom: 30px;
     border-radius: 8px;
-    padding: 12px 16px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     box-sizing: content-box;
+    height: auto;
 }
 
-.mb-color-group.neutral .mb-color-item {
-    height: 54px;
+.mb-color-item i {
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.primary .mb-color-item i {
+    height: 100px;
+}
+
+.mb-color-item b {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #050C72;
+    margin-bottom: 2px;
+}
+
+.mb-color-item span {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #717591;
 }
 
 .mb-font-name {
