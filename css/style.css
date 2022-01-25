@@ -1547,6 +1547,19 @@ header::before {
     color: #434C88;
 }
 
+@media(max-width:1500px) {
+    .mb-section-description {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width:1400px) {
+    .mb-section-description {
+        font-size: 16px;
+    }
+}
+
 .mb-card-download {
     background: #27319B;
     border-radius: 8px;
@@ -1585,7 +1598,7 @@ header::before {
 
 .mb-logo-image {
     border-radius: 8px;
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1690,6 +1703,22 @@ header::before {
     line-height: 22px;
     text-align: center;
     color: #717591;
+}
+
+.mb-font-group-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #050C72;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+
+.mb-font-group-title:hover {
+    color: #252728;
 }
 
 .mb-font-name {
