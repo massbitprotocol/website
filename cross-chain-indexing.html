@@ -6,9 +6,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta name="description" content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
+    <meta name="description"
+        content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
     <meta name="og:title" property="og:title" content="MassBit.io" />
-    <meta name="og:description" property="og:description" content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
+    <meta name="og:description" property="og:description"
+        content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
     <meta name="twitter:card" content="MassBit.io" />
     <meta property="og:title" property="og:title" content="MassBit.io" />
     <meta property="og:description" content="The first fully decentralized solution. We help DeFi & Web3 apps to work faster, easier, more reliable, and more cost-effective." />
@@ -23,7 +25,7 @@
     <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="plugins/OwlCarousel2/assets/owl.theme.default.min.css" />
     <!-- <link rel="stylesheet" href="plugins/AOS/aos.css" /> -->
-    <link rel="stylesheet" href="css/style.css?v=13" />
+    <link rel="stylesheet" href="css/style.css?v=14" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZJ6DMKTCF"></script>
@@ -40,40 +42,63 @@
     <title>Cross-chain Indexing - MassBit.io</title>
 </head>
 
-<body class="cross-chain-page">
+<body class="testnet cross-chain-page">
     <div class="wr-loading" id="wr_loading">
         <img src="images/decor.svg" alt="loading..." height="80">
     </div>
     <nav class="navbar navbar-expand-lg navbar-light mb-navbar flex-wrap fixed-top">
+        <div class="mb-banner-testnet w-100">
+            <div class="container">
+                <div class="mb-banner-testnet-inner">
+                    <div>Come join our MassBit Route <span>Testnet</span> from <b>February 9th</b> until <b>March 25th,
+                            2022</b> 🎉 </div>
+                    <a href="massbit-route.html#ExploreMassBitRoute" class="btn btn-link-white btn-right-icon">
+                        <span>To learn more, click here</span>
+                    </a>
+                    <button class="btn-closex" type="button" onclick="hideBanner()"><i
+                            class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img class="mb-logo logo-default" src="images/logo.svg" alt="MassBit" />
                 <img class="mb-logo logo-white" src="images/logo-white.svg" alt="MassBit" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto my-3 my-lg-0 align-items-center align-items-lg-start">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#WhyMassBit">Why MassBit</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown0" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Developers
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown0">
-                            <li><a class="dropdown-item" target="_blank" href="https://docs.massbit.io/about/introduction">Docs</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://docs.massbit.io/about/contact-us">Supports</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://github.com/massbitprotocol/">Github</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://discord.gg/5ePzAEFNHZ">Discord</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu"
+                            aria-labelledby="navbarDropdown0">
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://docs.massbit.io/about/introduction">Docs</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://docs.massbit.io/about/contact-us">Supports</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://github.com/massbitprotocol/">Github</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://discord.gg/5ePzAEFNHZ">Discord</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Products
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu dropdown-menu-end mb-header-dropdown-menu"
+                            aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="massbit-route.html">MassBit Route</a></li>
                             <li><a class="dropdown-item active" href="cross-chain-indexing.html">Cross-chain Indexing</a></li>
                             <li><a class="dropdown-item" href="coming-soon.html">MassBit Insights</a></li>
@@ -83,7 +108,8 @@
                         <a class="nav-link" href="https://blog.massbit.io" target="_blank">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="coming-soon.html" target="_blank" class="nav-link btn-get-started ms-lg-3 d-inline-block">Contact</a>
+                        <a href="coming-soon.html" target="_blank"
+                            class="nav-link btn-get-started ms-lg-3 d-inline-block">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -95,13 +121,17 @@
         <div class="container">
             <div class="row align-items-center align-items-xl-center align-items-lg-end">
                 <div class="col-xl-5 col-lg-6 mt-lg-0 mb-5 pe-lg-0">
-                    <h2 class="mb-banner-sub-heading">Query & Transform<br/>The World's Data</h2>
+                    <h2 class="mb-banner-sub-heading">Query & Transform<br />The World's Data</h2>
                     <div class="mb-banner-description fs-18">
-                        Blockchain indexing is essential to DeFi and Web3 development. MassBit provides the infrastructure to index data from all the different blockchains, not only indexing smart contracts but also blockchain raw data for analytics purposes. This greatly reduces
-                        the pipeline length for devlopment teams. We support indexing logic in different languages as well, including Rust, AssemblyScript and TypeScript.
+                        Blockchain indexing is essential to DeFi and Web3 development. MassBit provides the
+                        infrastructure to index data from all the different blockchains, not only indexing smart
+                        contracts but also blockchain raw data for analytics purposes. This greatly reduces
+                        the pipeline length for devlopment teams. We support indexing logic in different languages as
+                        well, including Rust, AssemblyScript and TypeScript.
                     </div>
                     <div class="mb-banner-action">
-                        <a href="coming-soon.html" class="btn btn-primary me-3 mb-3 mb-md-0">Explore Community Indexers</a>
+                        <a href="coming-soon.html" class="btn btn-primary me-3 mb-3 mb-md-0">Explore Community
+                            Indexers</a>
                         <a href="coming-soon.html" class="btn-outline-light">Create Indexer</a>
                     </div>
                 </div>
@@ -113,7 +143,8 @@
     </header>
     <!-- End Header -->
     <main>
-        <section class="mb-section mb-section-start-with-massbit mt-lg-4 pt-md-0 pt-lg-5 pt-0 pb-lg-5 pb-0" id="WhyCrossChainIndexing">
+        <section class="mb-section mb-section-start-with-massbit mt-lg-4 pt-md-0 pt-lg-5 pt-0 pb-lg-5 pb-0"
+            id="WhyCrossChainIndexing">
             <div class="mb-section-start-with-massbit-container container">
                 <div class="mb-section-title text-center" data-aos="fade-up" data-aos-duration="500">
                     <span class="pt-2">Why Cross-chain Indexing</span>
@@ -128,12 +159,15 @@
                         <div class="col-md-6 mb-3 mb-md-0">
                             <div class="mb-cci-section pt-5">
                                 <h3>Cross-chain</h3>
-                                <p>We support all ETH-based compatible chains, such as Harmony ONE, Matic, BSC, ETH. We also support Substrate and Cardano. New chain support is continually being updated.</p>
+                                <p>We support all ETH-based compatible chains, such as Harmony ONE, Matic, BSC, ETH. We
+                                    also support Substrate and Cardano. New chain support is continually being updated.
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="img-tab-preview">
-                                <img id="img-tab-x" src="images/GIF/cross-chain.gif" class="mb-iafe-accordion-image img-fluid">
+                                <img id="img-tab-x" src="images/GIF/cross-chain.gif"
+                                    class="mb-iafe-accordion-image img-fluid">
                             </div>
                         </div>
                     </div>
@@ -149,13 +183,17 @@
                         <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0">
                             <div class="mb-cci-section">
                                 <h3>Saves 80% of Developers Time</h3>
-                                <p>Without utilizing Cross-Chain Indexing, developers would have to build an entire pipeline in order to query data. This includes running a node, reading and filtering raw data, indexing the data and storing it in a database,
-                                    then building a serving service. With cross-chain indexing however, all this the heavy lifting is done!</p>
+                                <p>Without utilizing Cross-Chain Indexing, developers would have to build an entire
+                                    pipeline in order to query data. This includes running a node, reading and filtering
+                                    raw data, indexing the data and storing it in a database,
+                                    then building a serving service. With cross-chain indexing however, all this the
+                                    heavy lifting is done!</p>
                             </div>
                         </div>
                         <div class="col-md-6 order-2 order-md-1">
                             <div class="img-tab-preview">
-                                <img id="img-tab-x" src="images/development.png" class="mb-iafe-accordion-image img-fluid">
+                                <img id="img-tab-x" src="images/development.png"
+                                    class="mb-iafe-accordion-image img-fluid">
                             </div>
                         </div>
                     </div>
@@ -171,7 +209,9 @@
                         <div class="col-md-6 mb-3 mb-md-0">
                             <div class="mb-cci-section">
                                 <h3>Integrates With Other Great Massbit Products</h3>
-                                <p>This product also integrates with Massbit Route, which increases indexing performance, lowers network response time and lowers method calls to the chain while utilizing a verification protocol to detect if the indexers
+                                <p>This product also integrates with Massbit Route, which increases indexing
+                                    performance, lowers network response time and lowers method calls to the chain while
+                                    utilizing a verification protocol to detect if the indexers
                                     are working well.</p>
                             </div>
                         </div>
@@ -186,7 +226,8 @@
         </section>
         <!-- End Flexible -->
 
-        <section class="mb-section mb-section-start-with-massbit mb-section-discover-cci-massbit" id="DiscoverCrossChainIndexingOnMassBit">
+        <section class="mb-section mb-section-start-with-massbit mb-section-discover-cci-massbit"
+            id="DiscoverCrossChainIndexingOnMassBit">
             <div class="mb-decor">
                 <div class="decor-1"></div>
                 <div class="decor-2"></div>
@@ -206,20 +247,45 @@
                             <div class="mb-discover-item mb-discover-item-style-1 pe-xl-5 selected">
                                 <div class="mb-discover-item-inner pe-xl-5">
                                     <div class="mb-discover-item-image">
-                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="32" cy="32" r="31" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M32 52C43.598 52 53 42.8218 53 31.5C53 20.1782 43.598 11 32 11C20.402 11 11 20.1782 11 31.5C11 42.8218 20.402 52 32 52Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 4"/>
-                                            <path d="M34.4694 8H29.5957C29.0434 8 28.5957 8.44772 28.5957 9V13.8736C28.5957 14.4259 29.0434 14.8736 29.5957 14.8736H34.4694C35.0216 14.8736 35.4694 14.4259 35.4694 13.8736V9C35.4694 8.44772 35.0216 8 34.4694 8Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M34.4694 49H29.5957C29.0434 49 28.5957 49.4477 28.5957 50V54.8736C28.5957 55.4259 29.0434 55.8736 29.5957 55.8736H34.4694C35.0216 55.8736 35.4694 55.4259 35.4694 54.8736V50C35.4694 49.4477 35.0216 49 34.4694 49Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M14.8736 20.1215H10C9.44772 20.1215 9 20.5692 9 21.1215V25.9951C9 26.5474 9.44772 26.9951 10 26.9951H14.8736C15.4259 26.9951 15.8736 26.5474 15.8736 25.9951V21.1215C15.8736 20.5692 15.4259 20.1215 14.8736 20.1215Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M53.8736 20.1215H49C48.4477 20.1215 48 20.5692 48 21.1215V25.9951C48 26.5474 48.4477 26.9951 49 26.9951H53.8736C54.4259 26.9951 54.8736 26.5474 54.8736 25.9951V21.1215C54.8736 20.5692 54.4259 20.1215 53.8736 20.1215Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M52.1224 39H47C46.4477 39 46 39.4477 46 40V45.1224C46 45.6747 46.4477 46.1224 47 46.1224H52.1224C52.6747 46.1224 53.1224 45.6747 53.1224 45.1224V40C53.1224 39.4477 52.6747 39 52.1224 39Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M16.1224 39H11C10.4477 39 10 39.4477 10 40V45.1224C10 45.6747 10.4477 46.1224 11 46.1224H16.1224C16.6747 46.1224 17.1224 45.6747 17.1224 45.1224V40C17.1224 39.4477 16.6747 39 16.1224 39Z" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M23.3252 30.0547C23.3252 34.001 26.5332 37.209 30.4795 37.209C31.9473 37.209 33.292 36.7607 34.417 35.9961L38.46 40.0391C38.7061 40.2939 39.0488 40.4082 39.3916 40.4082C40.1387 40.4082 40.6748 39.8457 40.6748 39.1162C40.6748 38.7646 40.5518 38.4395 40.3145 38.1934L36.2979 34.168C37.1328 33.0166 37.6338 31.5928 37.6338 30.0547C37.6338 26.1084 34.4258 22.9004 30.4795 22.9004C26.5332 22.9004 23.3252 26.1084 23.3252 30.0547ZM25.1885 30.0547C25.1885 27.1367 27.5527 24.7637 30.4795 24.7637C33.3975 24.7637 35.7705 27.1367 35.7705 30.0547C35.7705 32.9727 33.3975 35.3457 30.4795 35.3457C27.5527 35.3457 25.1885 32.9727 25.1885 30.0547Z" fill="currentColor"/>
-                                            </svg>
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="32" cy="32" r="31" stroke="currentColor" stroke-width="2" />
+                                            <path
+                                                d="M32 52C43.598 52 53 42.8218 53 31.5C53 20.1782 43.598 11 32 11C20.402 11 11 20.1782 11 31.5C11 42.8218 20.402 52 32 52Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 4" />
+                                            <path
+                                                d="M34.4694 8H29.5957C29.0434 8 28.5957 8.44772 28.5957 9V13.8736C28.5957 14.4259 29.0434 14.8736 29.5957 14.8736H34.4694C35.0216 14.8736 35.4694 14.4259 35.4694 13.8736V9C35.4694 8.44772 35.0216 8 34.4694 8Z"
+                                                fill="currentColor" stroke="currentColor" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M34.4694 49H29.5957C29.0434 49 28.5957 49.4477 28.5957 50V54.8736C28.5957 55.4259 29.0434 55.8736 29.5957 55.8736H34.4694C35.0216 55.8736 35.4694 55.4259 35.4694 54.8736V50C35.4694 49.4477 35.0216 49 34.4694 49Z"
+                                                fill="currentColor" stroke="currentColor" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M14.8736 20.1215H10C9.44772 20.1215 9 20.5692 9 21.1215V25.9951C9 26.5474 9.44772 26.9951 10 26.9951H14.8736C15.4259 26.9951 15.8736 26.5474 15.8736 25.9951V21.1215C15.8736 20.5692 15.4259 20.1215 14.8736 20.1215Z"
+                                                fill="currentColor" stroke="currentColor" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M53.8736 20.1215H49C48.4477 20.1215 48 20.5692 48 21.1215V25.9951C48 26.5474 48.4477 26.9951 49 26.9951H53.8736C54.4259 26.9951 54.8736 26.5474 54.8736 25.9951V21.1215C54.8736 20.5692 54.4259 20.1215 53.8736 20.1215Z"
+                                                fill="currentColor" stroke="currentColor" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M52.1224 39H47C46.4477 39 46 39.4477 46 40V45.1224C46 45.6747 46.4477 46.1224 47 46.1224H52.1224C52.6747 46.1224 53.1224 45.6747 53.1224 45.1224V40C53.1224 39.4477 52.6747 39 52.1224 39Z"
+                                                fill="currentColor" stroke="currentColor" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M16.1224 39H11C10.4477 39 10 39.4477 10 40V45.1224C10 45.6747 10.4477 46.1224 11 46.1224H16.1224C16.6747 46.1224 17.1224 45.6747 17.1224 45.1224V40C17.1224 39.4477 16.6747 39 16.1224 39Z"
+                                                fill="currentColor" stroke="currentColor" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M23.3252 30.0547C23.3252 34.001 26.5332 37.209 30.4795 37.209C31.9473 37.209 33.292 36.7607 34.417 35.9961L38.46 40.0391C38.7061 40.2939 39.0488 40.4082 39.3916 40.4082C40.1387 40.4082 40.6748 39.8457 40.6748 39.1162C40.6748 38.7646 40.5518 38.4395 40.3145 38.1934L36.2979 34.168C37.1328 33.0166 37.6338 31.5928 37.6338 30.0547C37.6338 26.1084 34.4258 22.9004 30.4795 22.9004C26.5332 22.9004 23.3252 26.1084 23.3252 30.0547ZM25.1885 30.0547C25.1885 27.1367 27.5527 24.7637 30.4795 24.7637C33.3975 24.7637 35.7705 27.1367 35.7705 30.0547C35.7705 32.9727 33.3975 35.3457 30.4795 35.3457C27.5527 35.3457 25.1885 32.9727 25.1885 30.0547Z"
+                                                fill="currentColor" />
+                                        </svg>
                                     </div>
                                     <div class="mb-discover-item-title">Explore Community Indexers</div>
-                                    <div class="mb-discover-item-description">Learn more about how we can help you realize your dAPI dream.</div>
+                                    <div class="mb-discover-item-description">Learn more about how we can help you
+                                        realize your dAPI dream.</div>
                                     <div class="mb-discover-item-action">
                                         <a class="btn btn-link-white btn-right-icon" href="coming-soon.html">
                                             <span>Open the Explorer</span>
@@ -232,20 +298,39 @@
                             <div class="mb-discover-item selected mb-discover-item-style-2 pe-xl-5">
                                 <div class="mb-discover-item-inner pe-xl-5">
                                     <div class="mb-discover-item-image">
-                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="32" cy="32" r="31" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M32 52C43.598 52 53 42.8218 53 31.5C53 20.1782 43.598 11 32 11C20.402 11 11 20.1782 11 31.5C11 42.8218 20.402 52 32 52Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 4"/>
-                                            <path d="M34.4694 8H29.5957C29.0434 8 28.5957 8.44772 28.5957 9V13.8736C28.5957 14.4259 29.0434 14.8736 29.5957 14.8736H34.4694C35.0216 14.8736 35.4694 14.4259 35.4694 13.8736V9C35.4694 8.44772 35.0216 8 34.4694 8Z" fill="currentColor"/>
-                                            <path d="M34.4694 49H29.5957C29.0434 49 28.5957 49.4477 28.5957 50V54.8736C28.5957 55.4259 29.0434 55.8736 29.5957 55.8736H34.4694C35.0216 55.8736 35.4694 55.4259 35.4694 54.8736V50C35.4694 49.4477 35.0216 49 34.4694 49Z" fill="currentColor"/>
-                                            <path d="M14.8736 20.1215H10C9.44772 20.1215 9 20.5692 9 21.1215V25.9951C9 26.5474 9.44772 26.9951 10 26.9951H14.8736C15.4259 26.9951 15.8736 26.5474 15.8736 25.9951V21.1215C15.8736 20.5692 15.4259 20.1215 14.8736 20.1215Z" fill="currentColor"/>
-                                            <path d="M53.8736 20.1215H49C48.4477 20.1215 48 20.5692 48 21.1215V25.9951C48 26.5474 48.4477 26.9951 49 26.9951H53.8736C54.4259 26.9951 54.8736 26.5474 54.8736 25.9951V21.1215C54.8736 20.5692 54.4259 20.1215 53.8736 20.1215Z" fill="currentColor"/>
-                                            <path d="M52.1224 39H47C46.4477 39 46 39.4477 46 40V45.1224C46 45.6747 46.4477 46.1224 47 46.1224H52.1224C52.6747 46.1224 53.1224 45.6747 53.1224 45.1224V40C53.1224 39.4477 52.6747 39 52.1224 39Z" fill="currentColor"/>
-                                            <path d="M16.1224 39H11C10.4477 39 10 39.4477 10 40V45.1224C10 45.6747 10.4477 46.1224 11 46.1224H16.1224C16.6747 46.1224 17.1224 45.6747 17.1224 45.1224V40C17.1224 39.4477 16.6747 39 16.1224 39Z" fill="currentColor"/>
-                                            <path d="M31.5103 30.5249C33.7251 30.5249 35.5708 28.5664 35.5708 26.0234C35.5708 23.5625 33.7148 21.645 31.5103 21.645C29.3159 21.645 27.4497 23.583 27.46 26.0337C27.46 28.5664 29.2954 30.5249 31.5103 30.5249ZM24.5479 39.9175H38.4521C39.457 39.9175 40.0825 39.4253 40.0825 38.6255C40.0825 35.9902 36.791 32.3604 31.5 32.3604C26.209 32.3604 22.9175 35.9902 22.9175 38.6255C22.9175 39.4253 23.543 39.9175 24.5479 39.9175Z" fill="currentColor"/>
-                                            </svg>
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="32" cy="32" r="31" stroke="currentColor" stroke-width="2" />
+                                            <path
+                                                d="M32 52C43.598 52 53 42.8218 53 31.5C53 20.1782 43.598 11 32 11C20.402 11 11 20.1782 11 31.5C11 42.8218 20.402 52 32 52Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 4" />
+                                            <path
+                                                d="M34.4694 8H29.5957C29.0434 8 28.5957 8.44772 28.5957 9V13.8736C28.5957 14.4259 29.0434 14.8736 29.5957 14.8736H34.4694C35.0216 14.8736 35.4694 14.4259 35.4694 13.8736V9C35.4694 8.44772 35.0216 8 34.4694 8Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M34.4694 49H29.5957C29.0434 49 28.5957 49.4477 28.5957 50V54.8736C28.5957 55.4259 29.0434 55.8736 29.5957 55.8736H34.4694C35.0216 55.8736 35.4694 55.4259 35.4694 54.8736V50C35.4694 49.4477 35.0216 49 34.4694 49Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M14.8736 20.1215H10C9.44772 20.1215 9 20.5692 9 21.1215V25.9951C9 26.5474 9.44772 26.9951 10 26.9951H14.8736C15.4259 26.9951 15.8736 26.5474 15.8736 25.9951V21.1215C15.8736 20.5692 15.4259 20.1215 14.8736 20.1215Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M53.8736 20.1215H49C48.4477 20.1215 48 20.5692 48 21.1215V25.9951C48 26.5474 48.4477 26.9951 49 26.9951H53.8736C54.4259 26.9951 54.8736 26.5474 54.8736 25.9951V21.1215C54.8736 20.5692 54.4259 20.1215 53.8736 20.1215Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M52.1224 39H47C46.4477 39 46 39.4477 46 40V45.1224C46 45.6747 46.4477 46.1224 47 46.1224H52.1224C52.6747 46.1224 53.1224 45.6747 53.1224 45.1224V40C53.1224 39.4477 52.6747 39 52.1224 39Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M16.1224 39H11C10.4477 39 10 39.4477 10 40V45.1224C10 45.6747 10.4477 46.1224 11 46.1224H16.1224C16.6747 46.1224 17.1224 45.6747 17.1224 45.1224V40C17.1224 39.4477 16.6747 39 16.1224 39Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M31.5103 30.5249C33.7251 30.5249 35.5708 28.5664 35.5708 26.0234C35.5708 23.5625 33.7148 21.645 31.5103 21.645C29.3159 21.645 27.4497 23.583 27.46 26.0337C27.46 28.5664 29.2954 30.5249 31.5103 30.5249ZM24.5479 39.9175H38.4521C39.457 39.9175 40.0825 39.4253 40.0825 38.6255C40.0825 35.9902 36.791 32.3604 31.5 32.3604C26.209 32.3604 22.9175 35.9902 22.9175 38.6255C22.9175 39.4253 23.543 39.9175 24.5479 39.9175Z"
+                                                fill="currentColor" />
+                                        </svg>
                                     </div>
                                     <div class="mb-discover-item-title">Create My Indexer</div>
-                                    <div class="mb-discover-item-description">Build an indexer and we can help you accelerate your work. </div>
+                                    <div class="mb-discover-item-description">Build an indexer and we can help you
+                                        accelerate your work. </div>
                                     <div class="mb-discover-item-action">
                                         <a class="btn btn-link-white btn-right-icon" href="coming-soon.html">
                                             <span>Create Indexer</span>
@@ -272,7 +357,7 @@
                                 <img src="images/logo-white.svg" height="42" alt="MassBit" />
                             </div>
                             <div class="mb-copyright">
-                                © Copyright 2021 MassBit.<br/> All rights reserved.
+                                © Copyright 2021 MassBit.<br /> All rights reserved.
                             </div>
                         </div>
                         <div class="col-md-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
@@ -305,7 +390,8 @@
                                     <a href="https://codelight.breezy.hr/" target="_blank">Careers</a>
                                 </li>
                                 <li>
-                                    <a href="https://docs.massbit.io/about/contact-us" target="_blank">Customer Support</a>
+                                    <a href="https://docs.massbit.io/about/contact-us" target="_blank">Customer
+                                        Support</a>
                                 </li>
                             </ul>
                         </div>
@@ -324,11 +410,11 @@
                                     .entry__label {
                                         font-family: 'Airbnb Cereal App Book';
                                     }
-                                    
+
                                     .sib-form .entry__field {
                                         margin: 0 !important;
                                     }
-                                    
+
                                     .sib-form,
                                     .sib-form-container,
                                     #sib-container,
@@ -341,45 +427,65 @@
                                 <!-- START - We recommend to place the below code where you want the form in your website html  -->
                                 <div class="sib-form" style="background-color: transparent;">
                                     <div id="sib-form-container" class="sib-form-container">
-                                        <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
-                                            <form id="sib-form" method="POST" action="https://a5f651f1.sibforms.com/serve/MUIEAK8orXdmPYsPcPyMh1o6AZapz2jJWTVp2uZtUp38kr5gNy-B8EREL2fOU9tC7lx1fzy3lneVWPOY0bMqw3pUsBT92YBSJtSqxSXIpEW7yTc0wRZAhjnDCj5K6sMPM4DUPu4_0lm21DDKifncX8X-jXJvYa1ZhpbU7usbhjmx5cDjTjzTKBjroMJ2uY6YY25Lf78qGgFYHoHi"
+                                        <div id="sib-container" class="sib-container--large sib-container--vertical"
+                                            style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
+                                            <form id="sib-form" method="POST"
+                                                action="https://a5f651f1.sibforms.com/serve/MUIEAK8orXdmPYsPcPyMh1o6AZapz2jJWTVp2uZtUp38kr5gNy-B8EREL2fOU9tC7lx1fzy3lneVWPOY0bMqw3pUsBT92YBSJtSqxSXIpEW7yTc0wRZAhjnDCj5K6sMPM4DUPu4_0lm21DDKifncX8X-jXJvYa1ZhpbU7usbhjmx5cDjTjzTKBjroMJ2uY6YY25Lf78qGgFYHoHi"
                                                 data-type="subscription">
                                                 <div class="sib-input sib-form-block">
                                                     <div class="form__entry entry_block">
                                                         <div class="form__label-row ">
                                                             <div class="entry__field text-dark">
-                                                                <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email address" data-required="true" required />
+                                                                <input class="input" type="text" id="EMAIL" name="EMAIL"
+                                                                    autocomplete="off" placeholder="Your email address"
+                                                                    data-required="true" required />
                                                             </div>
                                                         </div>
-                                                        <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+                                                        <label class="entry__error entry__error--primary"
+                                                            style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
                                                     </div>
                                                 </div>
-                                                <div class="sib-form-block" style="text-align: left;margin-top: 8px !important;">
-                                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; color:#FFFFFF; background-color:#2c3acf; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
-                                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                                                            <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                <div class="sib-form-block"
+                                                    style="text-align: left;margin-top: 8px !important;">
+                                                    <button
+                                                        class="sib-form-block__button sib-form-block__button-with-loader"
+                                                        style="font-size:16px; text-align:left; font-weight:700; color:#FFFFFF; background-color:#2c3acf; border-radius:3px; border-width:0px;"
+                                                        form="sib-form" type="submit">
+                                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                            viewBox="0 0 512 512">
+                                                            <path
+                                                                d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
                                                         </svg>
                                                         SUBSCRIBE
                                                     </button>
                                                 </div>
-                                                <input type="text" name="email_address_check" value="" class="input--hidden">
+                                                <input type="text" name="email_address_check" value=""
+                                                    class="input--hidden">
                                                 <input type="hidden" name="locale" value="en">
                                             </form>
                                         </div>
-                                        <div id="error-message" class="sib-form-message-panel mt-2" style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-                                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                        <div id="error-message" class="sib-form-message-panel mt-2"
+                                            style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+                                            <div
+                                                class="sib-form-message-panel__text sib-form-message-panel__text--center">
                                                 <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-            </svg>
-                                                <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                                                    <path
+                                                        d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                                </svg>
+                                                <span class="sib-form-message-panel__inner-text">Your subscription could
+                                                    not be saved. Please try again.</span>
                                             </div>
                                         </div>
-                                        <div id="success-message" class="sib-form-message-panel mt-2" style="font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-                                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                        <div id="success-message" class="sib-form-message-panel mt-2"
+                                            style="font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+                                            <div
+                                                class="sib-form-message-panel__text sib-form-message-panel__text--center">
                                                 <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-            </svg>
-                                                <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+                                                    <path
+                                                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                                </svg>
+                                                <span class="sib-form-message-panel__inner-text">Your subscription has
+                                                    been successful.</span>
                                             </div>
                                         </div>
 
@@ -408,7 +514,8 @@
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-6">
-                            <div class="mb-socials justify-content-lg-start justify-content-md-end justify-content-start">
+                            <div
+                                class="mb-socials justify-content-lg-start justify-content-md-end justify-content-start">
                                 <a href="https://twitter.com/massbitprotocol" target="_blank">
                                     <img src="images/socials/twitter.svg" alt="Twitter" />
                                 </a>
@@ -462,7 +569,8 @@
             <div class="mb-right-box-heading">
                 <div>MassBit is hiring. Come join an industry-leading team.</div>
             </div>
-            <a rel="noopener" href="https://codelight.breezy.hr/" target="_blank" class="btn btn-outline-primary btn-sm w-100">See current openings</a>
+            <a rel="noopener" href="https://codelight.breezy.hr/" target="_blank"
+                class="btn btn-outline-primary btn-sm w-100">See current openings</a>
 
             <a href="#" class="mb-right-box-close">
                 <img src="images/close-icon.svg" width="10" height="10" alt="">
@@ -474,7 +582,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="plugins/OwlCarousel2/owl.carousel.min.js"></script>
-    <script src="js/script.js?v=12"></script>
+    <script src="js/script.js?v=13"></script>
 </body>
 
 </html>
