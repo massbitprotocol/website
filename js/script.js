@@ -122,11 +122,14 @@ if (noticeModalEl) {
     var noticeModal = new bootstrap.Modal(noticeModalEl, {});
     window.onload = function () {
         window.setTimeout(() => {
-            noticeModal.show();
+            if(!sessionStorage.getItem('isShowPopup')){
+                noticeModal.show();
+            }
         }, 2000)
     };
     noticeModalEl.addEventListener('hidden.bs.modal', function (event) {
         $('body').addClass('testnet');
         $('.mb-banner-testnet').fadeIn(300);
+        sessionStorage.setItem('isShowPopup', true);
     })
 }
