@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // AOS.init();
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var wScroll = $(this).scrollTop();
         if (wScroll >= 80) {
             $('.navbar').addClass('mb-navbar-fixed');
@@ -42,7 +42,7 @@ $(document).ready(function() {
     $(".mb-team-experience-slide").owlCarousel(config);
     $(".mb-partners-slide").owlCarousel(config);
 
-    $(".navbar-nav .nav-link").click(function(e) {
+    $(".navbar-nav .nav-link").click(function (e) {
         const targetEl = $(this).attr('href');
         if (targetEl != '#' && targetEl.startsWith('#')) {
             e.preventDefault();
@@ -52,14 +52,14 @@ $(document).ready(function() {
         }
     });
 
-    $('#to_top').click(function(e) {
+    $('#to_top').click(function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
         }, 500);
     })
 
-    $('.mb-right-box-close').click(function(e) {
+    $('.mb-right-box-close').click(function (e) {
         e.preventDefault();
         $('.mb-right-box-wrap').fadeOut(300);
         $('.mb-right-box-wrap').removeClass('show');
@@ -74,7 +74,7 @@ $(document).ready(function() {
         $('.mb-right-box-wrap').addClass('show');
     }, 1500)
 });
-$(document).ready(function() {
+$(document).ready(function () {
     window.addEventListener("scroll", handleToggleScrollToTop);
 
     function handleToggleScrollToTop(e) {
@@ -116,4 +116,17 @@ function setSlide() {
 function hideBanner() {
     $('body').removeClass('testnet');
     $('.mb-banner-testnet').hide(300);
+}
+var noticeModalEl = document.getElementById("noticeModal");
+if (noticeModalEl) {
+    var noticeModal = new bootstrap.Modal(noticeModalEl, {});
+    window.onload = function () {
+        window.setTimeout(() => {
+            noticeModal.show();
+        }, 2000)
+    };
+    noticeModalEl.addEventListener('hidden.bs.modal', function (event) {
+        $('body').addClass('testnet');
+        $('.mb-banner-testnet').fadeIn(300);
+    })
 }
