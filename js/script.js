@@ -59,20 +59,20 @@ $(document).ready(function () {
         }, 500);
     })
 
-    $('.mb-right-box-close').click(function (e) {
-        e.preventDefault();
-        $('.mb-right-box-wrap').fadeOut(300);
-        $('.mb-right-box-wrap').removeClass('show');
-    })
+    // $('.mb-right-box-close').click(function (e) {
+    //     e.preventDefault();
+    //     $('.mb-right-box-wrap').fadeOut(300);
+    //     $('.mb-right-box-wrap').removeClass('show');
+    // })
 
     window.setTimeout(() => {
         $('#wr_loading').fadeOut();
     }, 800)
 
-    window.setTimeout(() => {
-        $('.mb-right-box-wrap').fadeIn(300);
-        $('.mb-right-box-wrap').addClass('show');
-    }, 1500)
+    // window.setTimeout(() => {
+    //     $('.mb-right-box-wrap').fadeIn(300);
+    //     $('.mb-right-box-wrap').addClass('show');
+    // }, 1500)
 });
 $(document).ready(function () {
     window.addEventListener("scroll", handleToggleScrollToTop);
@@ -121,15 +121,18 @@ var noticeModalEl = document.getElementById("noticeModal");
 if (noticeModalEl) {
     var noticeModal = new bootstrap.Modal(noticeModalEl, {});
     window.onload = function () {
-        window.setTimeout(() => {
-            if(!sessionStorage.getItem('isShowPopup')){
+        if (!localStorage.getItem('isShowPopup')) {
+            window.setTimeout(() => {
                 noticeModal.show();
-            }
-        }, 2000)
+            }, 2000)
+        } else {
+            $('body').addClass('testnet');
+            $('.mb-banner-testnet').fadeIn(300);
+        }
     };
     noticeModalEl.addEventListener('hidden.bs.modal', function (event) {
         $('body').addClass('testnet');
         $('.mb-banner-testnet').fadeIn(300);
-        sessionStorage.setItem('isShowPopup', true);
+        localStorage.setItem('isShowPopup', true);
     })
 }

@@ -140,6 +140,18 @@ body {
 .btn-primary:hover {
   box-shadow: 0 10px 20px -10px rgb(17 38 146 / 40%) !important;
 }
+.btn-success {
+  padding: 13px 20px;
+  background: #00B159;
+  border-radius: 8px;
+  border: 1px solid #00B159;
+}
+
+.btn-success:hover {
+  background: #03ce69;
+  border-color: #03ce69;
+  box-shadow: 0 10px 20px -10px rgba(0,177,89,.4) !important;
+}
 
 .btn-fw {
   min-width: 200px;
