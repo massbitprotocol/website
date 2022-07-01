@@ -41,7 +41,7 @@ am5.ready(function() {
     var regionalSeries = {};
     // Load store data
     function loadData() {
-        am5.net.load("https://dapi.massbit.io/api/v1?action=stat.network").then(function(res) {
+        am5.net.load("https://portal.massbitroute.net/mbr/overview/network").then(function(res) {
             var resJson = am5.JSONParser.parse(res.response);
             if (resJson.result) {
                 setupStores(resJson.data.gateways, 'Gateway');
